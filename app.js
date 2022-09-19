@@ -1,4 +1,4 @@
-function GroceryList(props) {
+const GroceryList = (props) => {
   return (
     <div>
       <h2>My Todo List</h2>
@@ -7,7 +7,7 @@ function GroceryList(props) {
   );
 }
 
-function TodoListItem(props) {
+const TodoListItem = (props) => {
   const [isDone, setIsDone] = React.useState(false);
   const [isHovering, setIsHovering] = React.useState(false);
 
@@ -36,7 +36,7 @@ function TodoListItem(props) {
   );
 }
 
-function TodoList(props) {
+const TodoList = (props) => {
   return (
     <ul>
       {props.todos.map((todo) => (
